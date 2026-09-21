@@ -17,8 +17,8 @@
     "id": "micro-sd-slot",
     "label": "Micro SD Card",
     "description": "Micro SD card slot for local data storage.",
-    "position": [-0.02416, -0.07326, -0.00592],
-    "normal": [0.488, 0.014, 0.873]
+    "position": [0.0464, -0.0668, 0.01528],
+    "normal": [0.972, -0.219, -0.086]
   },
   {
     "id": "sensor-usb",
@@ -38,7 +38,7 @@
     "id": "light-sensor-gps-port",
     "label": "Light Sensor / External GPS Port",
     "description": "Ambient light sensor and external GPS connector.",
-    "position": [-0.0144, 0.01607, 0.00948],
-    "normal": [0.933, 0, -0.361]
+    "position": [0.01423, 0.01678, -0.01727],
+    "normal": [0, 0, 1]
   }
 ]
