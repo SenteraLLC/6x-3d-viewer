@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "type": "rich",
+  "title": "Sentera 6X Sensor Assembly — Interactive 3D Model",
+  "provider_name": "Sentera",
+  "provider_url": "https://senterallc.github.io/6x-3d-viewer/",
+  "width": 800,
+  "height": 600,
+  "html": "<iframe src=\"https://senterallc.github.io/6x-3d-viewer/embed/21224-assembly.html\" width=\"800\" height=\"600\" style=\"border:0;max-width:100%\" allow=\"xr-spatial-tracking\" allowfullscreen loading=\"lazy\"></iframe>"
+}
