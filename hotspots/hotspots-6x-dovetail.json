@@ -1,0 +1,32 @@
+[
+  {
+    "id": "hotspot-1",
+    "label": "Dovetail Mount Interface",
+    "description": "Attachment interface to drone gimbal/mount. Placeholder \u2014 verify/reposition using Edit Mode.",
+    "position": [
+      0.023095350712537766,
+      -0.120041124522686,
+      -0.020577028393745422
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ]
+  },
+  {
+    "id": "hotspot-2",
+    "label": "Drone Interface",
+    "description": "Electrical/mechanical interface to the drone. Placeholder \u2014 verify/reposition using Edit Mode.",
+    "position": [
+      0.023095350712537766,
+      0.015449999831616879,
+      -0.020577028393745422
+    ],
+    "normal": [
+      0,
+      1,
+      0
+    ]
+  }
+]
