@@ -1,30 +1,16 @@
 [
   {
-    "id": "dovetail-mount-interface",
+    "id": "hotspot-1",
     "label": "Dovetail Mount Interface",
-    "description": "Attachment interface to drone gimbal/mount.",
+    "description": "Attachment interface to drone gimbal/mount. Placeholder \u2014 verify/reposition using Edit Mode.",
     "position": [0.023095350712537766, -0.120041124522686, -0.020577028393745422],
     "normal": [0, -1, 0]
   },
   {
-    "id": "drone-interface",
+    "id": "hotspot-2",
     "label": "Drone Interface",
-    "description": "Electrical/mechanical interface to the drone.",
+    "description": "Electrical/mechanical interface to the drone. Placeholder \u2014 verify/reposition using Edit Mode.",
     "position": [0.023095350712537766, 0.015449999831616879, -0.020577028393745422],
     "normal": [0, 1, 0]
-  },
-  {
-    "id": "pitch-motor",
-    "label": "Pitch Motor",
-    "description": "Drives pitch-axis stabilization.",
-    "position": [-0.05893, -0.05608, 0.02442],
-    "normal": [-1, 0, 0]
-  },
-  {
-    "id": "roll-motor",
-    "label": "Roll Motor",
-    "description": "Drives roll-axis stabilization.",
-    "position": [-0.01852, -0.06125, -0.04265],
-    "normal": [-0.974, -0.227, 0.001]
   }
 ]
