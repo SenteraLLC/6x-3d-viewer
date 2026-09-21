@@ -40,5 +40,19 @@
     "description": "Ambient light sensor and external GPS connector.",
     "position": [0.01423, 0.01678, -0.01727],
     "normal": [0, 0, 1]
+  },
+  {
+    "id": "pitch-motor",
+    "label": "Pitch Motor",
+    "description": "Drives pitch-axis stabilization.",
+    "position": [-0.05893, -0.05608, 0.02442],
+    "normal": [-1, 0, 0]
+  },
+  {
+    "id": "roll-motor",
+    "label": "Roll Motor",
+    "description": "Drives roll-axis stabilization.",
+    "position": [-0.01852, -0.06125, -0.04265],
+    "normal": [-0.974, -0.227, 0.001]
   }
 ]
