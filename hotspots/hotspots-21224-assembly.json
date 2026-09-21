@@ -1,197 +1,44 @@
 [
   {
-    "id": "hotspot-1",
-    "label": "Light Sensor / External Gps Port",
-    "description": "Placeholder position \u2014 verify/reposition using Edit Mode.",
-    "position": [
-      -0.003064168617129326,
-      0.00018723076209425926,
-      0.05433524027466774
-    ],
-    "normal": [
-      0,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "hotspot-2",
-    "label": "Sensor Usb-C Port",
-    "description": "Placeholder position \u2014 verify/reposition using Edit Mode.",
-    "position": [
-      0.05280040204524994,
-      -0.029851539991796017,
-      0.0010604150593280792
-    ],
-    "normal": [
-      1,
-      0,
-      0
-    ]
-  },
-  {
-    "id": "hotspot-3",
-    "label": "Micro Sd Card",
-    "description": "Placeholder position \u2014 verify/reposition using Edit Mode.",
-    "position": [
-      0.05280040204524994,
-      -0.05989031074568629,
-      0.0010604150593280792
-    ],
-    "normal": [
-      1,
-      0,
-      0
-    ]
-  },
-  {
-    "id": "hotspot-4",
-    "label": "Status Leds",
-    "description": "Placeholder position \u2014 verify/reposition using Edit Mode.",
-    "position": [
-      -0.003064168617129326,
-      -0.029851539991796017,
-      0.05433524027466774
-    ],
-    "normal": [
-      0,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "hotspot-5",
+    "id": "lenses",
     "label": "Lenses",
-    "description": "Placeholder position \u2014 verify/reposition using Edit Mode.",
-    "position": [
-      -0.003064168617129326,
-      -0.05989031074568629,
-      0.05433524027466774
-    ],
-    "normal": [
-      0,
-      0,
-      1
-    ]
+    "description": "Camera lens array.",
+    "position": [-0.01721, -0.04357, 0.0537],
+    "normal": [0.005, -0.01, 1]
   },
   {
-    "id": "hotspot-6",
-    "label": "Ethernet",
-    "description": "Placeholder position \u2014 verify/reposition using Edit Mode.",
-    "position": [
-      -0.05892873927950859,
-      -0.029851539991796017,
-      0.0010604150593280792
-    ],
-    "normal": [
-      -1,
-      0,
-      0
-    ]
-  },
-  {
-    "id": "hotspot-7",
-    "label": "Power I/O",
-    "description": "Placeholder position \u2014 verify/reposition using Edit Mode.",
-    "position": [
-      -0.05892873927950859,
-      0.00018723076209425926,
-      0.0010604150593280792
-    ],
-    "normal": [
-      -1,
-      0,
-      0
-    ]
-  },
-  {
-    "id": "hotspot-8",
-    "label": "Power In",
-    "description": "Placeholder position \u2014 verify/reposition using Edit Mode.",
-    "position": [
-      -0.05892873927950859,
-      -0.05989031074568629,
-      0.0010604150593280792
-    ],
-    "normal": [
-      -1,
-      0,
-      0
-    ]
-  },
-  {
-    "id": "hotspot-9",
-    "label": "Expansion Port",
-    "description": "Placeholder position \u2014 verify/reposition using Edit Mode.",
-    "position": [
-      -0.003064168617129326,
-      0.00018723076209425926,
-      -0.05221441015601158
-    ],
-    "normal": [
-      0,
-      0,
-      -1
-    ]
-  },
-  {
-    "id": "hotspot-10",
-    "label": "Pitch Motor",
-    "description": "Placeholder position \u2014 verify/reposition using Edit Mode.",
-    "position": [
-      -0.003064168617129326,
-      0.030226001515984535,
-      0.0010604150593280792
-    ],
-    "normal": [
-      0,
-      1,
-      0
-    ]
-  },
-  {
-    "id": "hotspot-11",
-    "label": "Roll Motor",
-    "description": "Placeholder position \u2014 verify/reposition using Edit Mode.",
-    "position": [
-      0.05280040204524994,
-      0.00018723076209425926,
-      0.0010604150593280792
-    ],
-    "normal": [
-      1,
-      0,
-      0
-    ]
-  },
-  {
-    "id": "hotspot-12",
-    "label": "Ssd",
-    "description": "Placeholder position \u2014 verify/reposition using Edit Mode.",
-    "position": [
-      -0.003064168617129326,
-      -0.029851539991796017,
-      -0.05221441015601158
-    ],
-    "normal": [
-      0,
-      0,
-      -1
-    ]
-  },
-  {
-    "id": "hotspot-13",
+    "id": "drone-interface",
     "label": "Drone Interface",
-    "description": "Placeholder position \u2014 verify/reposition using Edit Mode.",
-    "position": [
-      -0.003064168617129326,
-      -0.08992908149957657,
-      0.0010604150593280792
-    ],
-    "normal": [
-      0,
-      -1,
-      0
-    ]
+    "description": "Mounting interface to the drone gimbal.",
+    "position": [0.00592, 0.03023, 0.00035],
+    "normal": [0, 1, 0]
+  },
+  {
+    "id": "micro-sd-slot",
+    "label": "Micro SD Card",
+    "description": "Micro SD card slot for local data storage.",
+    "position": [-0.02416, -0.07326, -0.00592],
+    "normal": [0.488, 0.014, 0.873]
+  },
+  {
+    "id": "sensor-usb",
+    "label": "Sensor USB-C Port",
+    "description": "USB-C port for data offload and configuration.",
+    "position": [0.04724, -0.0458, 0.01816],
+    "normal": [1, 0, 0]
+  },
+  {
+    "id": "status-led",
+    "label": "Status LEDs",
+    "description": "Indicator LEDs showing sensor status.",
+    "position": [0.04022, -0.02671, 0.03708],
+    "normal": [0.478, 0.862, 0.165]
+  },
+  {
+    "id": "light-sensor-gps-port",
+    "label": "Light Sensor / External GPS Port",
+    "description": "Ambient light sensor and external GPS connector.",
+    "position": [-0.0144, 0.01607, 0.00948],
+    "normal": [0.933, 0, -0.361]
   }
 ]
