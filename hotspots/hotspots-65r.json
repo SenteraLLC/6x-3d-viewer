@@ -1,0 +1,122 @@
+[
+  {
+    "id": "lens",
+    "label": "Lens",
+    "description": "26 mm EO imaging lens.",
+    "position": [
+      -0.9462,
+      9.6563,
+      4.0371
+    ],
+    "normal": [
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "lens-cap",
+    "label": "Lens Cap",
+    "description": "Protective lens cap (removed before flight).",
+    "position": [
+      -2.3006,
+      6.858,
+      4.4329
+    ],
+    "normal": [
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "lens-barrel",
+    "label": "Lens Barrel",
+    "description": "Front lens housing / shroud.",
+    "position": [
+      1.2834,
+      7.9455,
+      4.1177
+    ],
+    "normal": [
+      0.928,
+      0,
+      0.371
+    ]
+  },
+  {
+    "id": "status-leds",
+    "label": "Status LEDs",
+    "description": "Green status indicator LEDs.",
+    "position": [
+      1.6369,
+      4.9535,
+      -2.5967
+    ],
+    "normal": [
+      0,
+      0,
+      -1
+    ]
+  },
+  {
+    "id": "housing",
+    "label": "Main Housing",
+    "description": "Anodized aluminum body with product label.",
+    "position": [
+      -4.0531,
+      5.8442,
+      -2.4952
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "rear-housing",
+    "label": "Rear Housing",
+    "description": "Rear enclosure / heat sink.",
+    "position": [
+      -2.2552,
+      11.2045,
+      -4.8618
+    ],
+    "normal": [
+      0,
+      0.894,
+      -0.447
+    ]
+  },
+  {
+    "id": "cooling-fan",
+    "label": "Cooling Fan",
+    "description": "Active cooling fan on the rear of the sensor.",
+    "position": [
+      -1.9031,
+      6.5881,
+      -6.3445
+    ],
+    "normal": [
+      0,
+      0,
+      -1
+    ]
+  },
+  {
+    "id": "connector",
+    "label": "Connector Port",
+    "description": "Side connector / interface port.",
+    "position": [
+      2.3223,
+      8.2093,
+      -3.6258
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ]
+  }
+]

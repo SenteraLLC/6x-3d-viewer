@@ -3,33 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sentera 6X Interactive 3D Model</title>
+<title>Sentera 65R — Interactive 3D Model</title>
+<link rel="alternate" type="application/json+oembed"
+      href="https://senterallc.github.io/6x-3d-viewer/oembed/65r.json"
+      title="Sentera 65R — Interactive 3D Model">
+<meta property="og:title" content="Sentera 65R — Interactive 3D Model">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://senterallc.github.io/6x-3d-viewer/embed/65r.html">
 <script type="module" src="https://unpkg.com/@google/model-viewer@4.3.1/dist/model-viewer.min.js"></script>
 <style>
   :root { color-scheme: light dark; }
   html, body { margin: 0; padding: 0; height: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
   #wrap { position: relative; width: 100%; height: 100vh; min-height: 420px; }
   model-viewer {
-    width: 100%; height: 100%;
-    --poster-color: transparent;
+    width: 100%; height: 100%; --poster-color: transparent;
     background: radial-gradient(circle at 50% 38%, #e7ebf1 0%, #b9c2cf 68%, #99a3b3 100%);
   }
   .hotspot {
-    background: #f97316;
-    width: 22px; height: 22px;
-    border-radius: 50%;
+    background: #f97316; width: 22px; height: 22px; border-radius: 50%;
     border: 3px solid #ffffff;
     box-shadow: 0 0 0 3px rgba(17,24,39,0.55), 0 2px 6px rgba(0,0,0,0.5);
-    cursor: pointer;
-    transition: transform .15s ease;
-    padding: 0;
-    position: relative;
+    cursor: pointer; transition: transform .15s ease; padding: 0; position: relative;
   }
   .hotspot::after {
-    content: '';
-    position: absolute; inset: -6px; border-radius: 50%;
-    border: 2px solid rgba(249,115,22,0.65);
-    animation: hotspot-pulse 1.8s ease-out infinite;
+    content: ''; position: absolute; inset: -6px; border-radius: 50%;
+    border: 2px solid rgba(249,115,22,0.65); animation: hotspot-pulse 1.8s ease-out infinite;
     pointer-events: none;
   }
   @keyframes hotspot-pulse {
@@ -38,35 +36,16 @@
   }
   .hotspot:hover, .hotspot:focus { transform: scale(1.25); background: #ea580c; }
   .hotspot-label {
-    position: absolute;
-    left: 100%;
-    top: 50%;
-    transform: translate(10px, -50%);
-    background: rgba(17,24,39,0.92);
-    color: #fff;
-    padding: 6px 10px;
-    border-radius: 6px;
-    font-size: 13px;
-    line-height: 1.35;
-    max-width: 220px;
-    pointer-events: none;
-    display: none;
-    white-space: normal;
-    text-align: left;
+    position: absolute; left: 100%; top: 50%; transform: translate(10px, -50%);
+    background: rgba(17,24,39,0.92); color: #fff; padding: 6px 10px; border-radius: 6px;
+    font-size: 13px; line-height: 1.35; max-width: 220px; pointer-events: none;
+    display: none; white-space: normal; text-align: left;
   }
   .hotspot-label strong { display: block; font-size: 13px; margin-bottom: 2px; }
   .hotspot-label span { font-size: 12px; opacity: .85; }
-  .hotspot:hover .hotspot-label,
-  .hotspot.expanded .hotspot-label { display: block; }
-
-  #toolbar {
-    position: absolute; top: 10px; left: 10px; z-index: 10;
-    display: flex; gap: 8px; flex-wrap: wrap;
-  }
-  #toolbar button {
-    background: #111827e6; color: #fff; border: none; border-radius: 6px;
-    padding: 6px 10px; font-size: 12px; cursor: pointer;
-  }
+  .hotspot:hover .hotspot-label, .hotspot.expanded .hotspot-label { display: block; }
+  #toolbar { position: absolute; top: 10px; left: 10px; z-index: 10; display: flex; gap: 8px; flex-wrap: wrap; }
+  #toolbar button { background: #111827e6; color: #fff; border: none; border-radius: 6px; padding: 6px 10px; font-size: 12px; cursor: pointer; }
   #toolbar button.active { background: #2563eb; }
   #editPanel {
     position: absolute; bottom: 10px; left: 10px; right: 10px; z-index: 10;
@@ -83,62 +62,23 @@
 </head>
 <body>
 <div id="wrap">
-  <model-viewer
-    id="mv"
-    src=""
-    camera-controls
-    touch-action="pan-y"
-    exposure="0.9"
-    tone-mapping="commerce"
-    environment-image="neutral"
-    shadow-intensity="1"
-    shadow-softness="0.75"
-    interaction-prompt="none"
-    ar>
+  <model-viewer id="mv" src="../models/65R_Display.opt.glb"
+    camera-controls touch-action="pan-y" exposure="1.6" tone-mapping="neutral"
+    environment-image="neutral" shadow-intensity="0.9" shadow-softness="0.8"
+    camera-orbit="40deg 68deg auto" min-field-of-view="20deg"
+    interaction-prompt="none" ar>
   </model-viewer>
-
   <div id="toolbar">
     <button id="resetBtn">Reset View</button>
     <button id="editBtn">Edit Hotspots</button>
   </div>
-
   <div id="editPanel">
-    <div>Edit mode: click anywhere on the model to log the 3D position under the cursor. Copy the JSON below into <code>hotspots-*.json</code> to adjust a hotspot.</div>
+    <div>Edit mode: click anywhere on the model to log the 3D position under the cursor. Copy the JSON below into <code>hotspots-65r.json</code> to adjust a hotspot.</div>
     <textarea id="editOutput" readonly placeholder="Click on the model..."></textarea>
   </div>
 </div>
-
 <script>
-const params = new URLSearchParams(location.search);
-const model = params.get('model') || '6x-dovetail';
-
-const MODELS = {
-  '6x-dovetail': {
-    glb: 'models/6X_Smart_Dovetail_forward.opt.glb',
-    hotspots: 'hotspots/hotspots-6x-dovetail.json'
-  },
-  '21224-assembly': {
-    glb: 'models/21224-00_STEP_ASSEMBLY.opt.glb',
-    hotspots: 'hotspots/hotspots-21224-assembly.json'
-  },
-  '65r': {
-    glb: 'models/65R_Display.opt.glb',
-    hotspots: 'hotspots/hotspots-65r.json',
-    exposure: '1.6',
-    toneMapping: 'neutral',
-    shadowIntensity: '0.9',
-    orbit: '40deg 68deg 105%'
-  }
-};
-
-const cfg = MODELS[model] || MODELS['6x-dovetail'];
 const mv = document.getElementById('mv');
-mv.src = cfg.glb;
-if (cfg.exposure) mv.setAttribute('exposure', cfg.exposure);
-if (cfg.toneMapping) mv.setAttribute('tone-mapping', cfg.toneMapping);
-if (cfg.shadowIntensity) mv.setAttribute('shadow-intensity', cfg.shadowIntensity);
-if (cfg.orbit) mv.setAttribute('camera-orbit', cfg.orbit);
-
 let editMode = false;
 const editBtn = document.getElementById('editBtn');
 const editPanel = document.getElementById('editPanel');
@@ -151,7 +91,7 @@ editBtn.addEventListener('click', () => {
 });
 
 document.getElementById('resetBtn').addEventListener('click', () => {
-  mv.cameraOrbit = cfg.orbit || '0deg 75deg 105%';
+  mv.cameraOrbit = '40deg 68deg 105%';
   mv.cameraTarget = 'auto auto auto';
 });
 
@@ -164,9 +104,7 @@ mv.addEventListener('click', (ev) => {
   if (!hit) return;
   const p = hit.position, n = hit.normal;
   const snippet = {
-    id: 'hotspot-new',
-    label: 'New Feature',
-    description: 'Describe this feature.',
+    id: 'hotspot-new', label: 'New Feature', description: 'Describe this feature.',
     position: [+p.x.toFixed(5), +p.y.toFixed(5), +p.z.toFixed(5)],
     normal: [+n.x.toFixed(3), +n.y.toFixed(3), +n.z.toFixed(3)]
   };
@@ -175,12 +113,10 @@ mv.addEventListener('click', (ev) => {
 
 async function loadHotspots() {
   try {
-    const res = await fetch(cfg.hotspots);
+    const res = await fetch('../hotspots/hotspots-65r.json');
     const hotspots = await res.json();
     hotspots.forEach(h => addHotspot(h));
-  } catch (e) {
-    console.error('Failed to load hotspots', e);
-  }
+  } catch (e) { console.error('Failed to load hotspots', e); }
 }
 
 function addHotspot(h) {
@@ -190,21 +126,17 @@ function addHotspot(h) {
   btn.dataset.position = h.position.join(' ');
   btn.dataset.normal = h.normal.join(' ');
   btn.setAttribute('aria-label', h.label);
-
   const label = document.createElement('div');
   label.className = 'hotspot-label';
   label.innerHTML = `<strong>${h.label}</strong><span>${h.description || ''}</span>`;
   btn.appendChild(label);
-
   btn.addEventListener('click', (e) => {
     e.stopPropagation();
     document.querySelectorAll('.hotspot').forEach(el => { if (el !== btn) el.classList.remove('expanded'); });
     btn.classList.toggle('expanded');
   });
-
   mv.appendChild(btn);
 }
-
 loadHotspots();
 </script>
 </body>
