@@ -4,24 +4,9 @@
     "label": "Lens",
     "description": "26 mm EO imaging lens.",
     "position": [
-      -0.9462,
-      9.6563,
-      4.0371
-    ],
-    "normal": [
-      0,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "lens-cap",
-    "label": "Lens Cap",
-    "description": "Protective lens cap (removed before flight).",
-    "position": [
-      -2.3006,
-      6.858,
-      4.4329
+      -0.0008,
+      0.0534,
+      0.0523
     ],
     "normal": [
       0,
@@ -34,9 +19,9 @@
     "label": "Lens Barrel",
     "description": "Front lens housing / shroud.",
     "position": [
-      1.2834,
-      7.9455,
-      4.1177
+      0.0215,
+      0.0363,
+      0.0531
     ],
     "normal": [
       0.928,
@@ -49,9 +34,9 @@
     "label": "Status LEDs",
     "description": "Green status indicator LEDs.",
     "position": [
-      1.6369,
-      4.9535,
-      -2.5967
+      0.025,
+      0.0064,
+      -0.014
     ],
     "normal": [
       0,
@@ -64,9 +49,9 @@
     "label": "Main Housing",
     "description": "Anodized aluminum body with product label.",
     "position": [
-      -4.0531,
-      5.8442,
-      -2.4952
+      -0.0319,
+      0.0153,
+      -0.013
     ],
     "normal": [
       -1,
@@ -79,9 +64,9 @@
     "label": "Rear Housing",
     "description": "Rear enclosure / heat sink.",
     "position": [
-      -2.2552,
-      11.2045,
-      -4.8618
+      -0.0139,
+      0.0689,
+      -0.0367
     ],
     "normal": [
       0,
@@ -94,9 +79,9 @@
     "label": "Cooling Fan",
     "description": "Active cooling fan on the rear of the sensor.",
     "position": [
-      -1.9031,
-      6.5881,
-      -6.3445
+      -0.0104,
+      0.0227,
+      -0.0515
     ],
     "normal": [
       0,
@@ -109,9 +94,9 @@
     "label": "Connector Port",
     "description": "Side connector / interface port.",
     "position": [
-      2.3223,
-      8.2093,
-      -3.6258
+      0.0319,
+      0.039,
+      -0.0243
     ],
     "normal": [
       1,
